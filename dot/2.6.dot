@@ -1,0 +1,16 @@
+digraph {
+	rankdir=LR;
+	margin=0.2;
+	size=5;
+	node [margin=0.1 shape=circle];
+	q3r1[margin=0 shape=doublecircle];
+	" "[color=white width=0];
+	q0r0 -> q1r1 [label = "a,b"];
+	q1r1 -> q2r0 [label = "a,b"];
+	q2r0 -> q3r1 [label = "a,b"];
+	q3r1 -> q3r0 [label = "a,b"];
+	q3r0 -> q3r1 [label = "a,b"];
+	q0r1 -> q1r0 [label = "a,b"];
+	q1r0 -> q2r1 [label = "a,b"];
+	q2r1 -> q3r0 [label = "a,b"];
+}
